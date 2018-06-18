@@ -1,20 +1,21 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { createMaterialTopTabNavigator } from 'react-navigation';
+// import { createMaterialTopTabNavigator } from 'react-navigation';
 
-//import of components
-import {HomeScreen,SettingsScreen} from './components/TabSlider';
+// // ** import of components **
+// import {HomeScreen,SettingsScreen} from './components/TabSlider';
+import DatePicker from './components/DatePicker';
 
-
-// export default class App extends React.Component {
-//   render() {
-//     return (
-//       <View style={styles.container}>
-//         createBottomTabNavigator 
-//       </View>
-//     );
-//   }
-// }
+export default class App extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>App</Text>
+          <DatePicker/>
+      </View>
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -25,7 +26,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default createMaterialTopTabNavigator({
-  Home: HomeScreen,
-  Settings: SettingsScreen,
-});
+// export default createMaterialTopTabNavigator({
+//   Home: HomeScreen,
+//   Settings: SettingsScreen,
+// });
