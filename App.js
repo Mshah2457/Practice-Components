@@ -4,14 +4,20 @@ import { StyleSheet, Text, View } from 'react-native';
 
 // // ** import of components **
 // import {HomeScreen,SettingsScreen} from './components/TabSlider';
-import DatePicker from './components/DatePicker';
+// import DatePicker from './components/DatePicker';
+// import DateTimePickerTester from './playground/DateTimePicker';
+// import ImagePicker from './playground/ImagePicker';
+import ImageSlider from './components/ImageSlider';
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
         <Text>App</Text>
-          <DatePicker/>
+          {/* <DatePicker/> */}
+          {/* <DateTimePickerTester/> */}
+          {/* <ImagePicker/> */}
+          <ImageSlider/>
       </View>
     );
   }
