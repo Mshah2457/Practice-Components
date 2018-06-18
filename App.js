@@ -1,16 +1,20 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import createBottomTabNavigator from './components/TabSlider';
+import { createMaterialTopTabNavigator } from 'react-navigation';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <createBottomTabNavigator />
-      </View>
-    );
-  }
-}
+//import of components
+import {HomeScreen,SettingsScreen} from './components/TabSlider';
+
+
+// export default class App extends React.Component {
+//   render() {
+//     return (
+//       <View style={styles.container}>
+//         createBottomTabNavigator 
+//       </View>
+//     );
+//   }
+// }
 
 const styles = StyleSheet.create({
   container: {
@@ -19,4 +23,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+});
+
+export default createMaterialTopTabNavigator({
+  Home: HomeScreen,
+  Settings: SettingsScreen,
 });
